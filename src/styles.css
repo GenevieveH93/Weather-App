@@ -58,6 +58,11 @@ a:hover {
   color: #529191;
   border: 1.5px solid #529191;
 }
+#footer-link{
+  font-family: "Quicksand", sans-serif;
+  font-size: 9px;
+  line-height: 15px;
+}
 .app-wrapping {
   max-width: 60%;
   display: block;
