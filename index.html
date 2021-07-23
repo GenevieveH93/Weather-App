@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </style>
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+     <div class="app-wrapping">
+        <div class="container">
+
+            <header>
+                <div class="row">
+                    <div class="col-7">
+                        <h1> </h1>
+                    </div>
+                    <div class="col-5 search">
+                        <form id="city-input">
+                        <input type="text" placeholder="Type a city" id="placeholder-text">
+                        <input type="submit" value="Search" id="search-button">
+                        </br> <a href="#" id="current-location">Current Location</a>
+                        </form>
+                    </div>
+                </div>
+
+                <p id="current-time"> </p>
+
+                <div class="row">
+                    <div class="col-12">
+                        <button class="current-weather"> 
+                            <span><h2> </h2></span>
+                             <span class="temp-unit"> <a href="#" id="celsius">ºC</a> | <a href="#" id="fahrenheit">ºF<a></span>  
+                        </button>
+                        <span class="today-range"><h6>☀️  <span id="description"> Sunny</span></h6>
+                                <h6>21ºC | 8ºC</h6>
+                                </span> 
+                    
+                    </div>
+                </div>
+            </header>
+
+            <section> 
+                <div class="row">
+                    <div class="col-4 forecast">
+                         🌥
+                        </br> <h5>20ºC | 6ºC</h5>
+                    </div>
+                    <div class="col-4 forecast">
+                        ☀️
+                        </br> <h5>21ºC | 6ºC</h5>
+                    </div>
+                    <div class="col-4 forecast">
+                         ☀️
+                        </br> <h5>22ºC | 8ºC</h5>
+                    </div>
+                </div>
+
+                <div class="row day">
+                    <div class="col-4">
+                        <p>Sun</p>
+                    </div>
+                    <div class="col-4">
+                        <p>Mon</p>
+                    </div>
+                    <div class="col-4">
+                        <p>Tue</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 forecast">
+                         🌦
+                        </br> <h5>20ºC | 4ºC</h5>
+                    </div>
+                    <div class="col-4 forecast">
+                         ⛈
+                        </br> <h5>22ºC | 4ºC</h5>
+                    </div>
+                    <div class="col-4 forecast">
+                         ☁️
+                        </br> <h5>19ºC | 7ºC</h5>
+                    </div>
+                </div>
+
+                <div class="row day">
+                    <div class="col-4">
+                        <p>Wed</p>
+                    </div>
+                    <div class="col-4">
+                        <p>Thu</p>
+                    </div>
+                    <div class="col-4">
+                        <p>Fri</p>
+                    </div>
+                </div>
+            </section>  
+
+            <footer>
+                <p class="footer-text">Coded by Genevieve Hines</p>
+            </footer>
+
+        </div>
+    </div>
+
+<script src="src/index.js"></script>
+</body>
+</html>
